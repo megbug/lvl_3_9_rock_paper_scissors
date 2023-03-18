@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schere-Stein-Papier</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="radioBtn">
+        <h2>how many rounds</h2>
+        <form action="" id="form">
+            <div id="rounds">
+                <label for="">5</label>
+                <input type="radio" name="rounds" id="five" value="5">
+                <label for="">10</label>
+                <input type="radio" name="rounds" id="ten" value="10">
+                <label for="">15</label>
+                <input type="radio" name="rounds" id="fiveteen" value="15">
+                <label for="">20</label>
+                <input type="radio" name="rounds" id="twenty" value="20">
+            </div>
+        </form>
+        <p id="roundScore"></p>
+    </div>
+
+    <div class="score">
+        <article>
+            <p id="score"></p>
+        </article>
+    </div>
+
+    <div class="resultTextform">
+        <p id="resultTextform">Let's Play</p>
+    </div>
+
+    <div class="icon buttons">
+        <input type="button" value="Rock" id="rock" onclick="playRock()">
+        <input type="button" value="Paper" id="paper" onclick="playPaper()">
+        <input type="button" value="Scissors" id="scissors" onclick="playScissors()">
+        <p>MAKE YOUR MOVE</p>
+    </div>
+    <a href="">restart</a>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
