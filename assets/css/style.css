@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'didact-reg';
+    src: url(../fonts/DidactGothic-Regular.ttf);
+}
+
+html {
+    background-color: #24272F;
+    font-family: 'didact-reg';
+    font-size: 30px;
+}
+
+h1 {
+    background-color: dimgrey;
+    text-align: center;
+    padding: 3vh 0;
+}
+
+section {
+    display: block;
+    margin: 3vh auto;
+    width: 300px;
+    text-align: center;
+    color: dimgrey;
+}
+
+section form {
+    border: 3px solid dimgrey;
+    /* display: grid;
+    grid-template-areas: repeat(2, 1fr); */
+}
+
+/* section form h2 {
+    text-align: center;
+}
+
+section form div label {
+    display: inline-block;
+    padding: 10px 40px 0 20px;
+} */
+
+section .score {
+    border: 3px solid dimgrey;
+    margin: 2vh 0;
+    padding: 4vh 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .score #user {
+    position: relative;
+    left: -30px;
+    background: firebrick;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+}
+
+section .score #comp {
+    position: relative;
+    right: -30px;
+    background: firebrick;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+}
+
+section .icon-buttons p{
+    font-size: 18px;
+    padding-top: 3vh;
+}
+
+section a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
