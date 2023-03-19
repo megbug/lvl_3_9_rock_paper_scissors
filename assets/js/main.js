@@ -37,6 +37,9 @@ const gamePlay = (userChoice) => {
             case "PaperScissors":
             case "RockPaper":
                 resultText.innerHTML = " The computer choose " + computerChoice + " and that beats " + userChoice + ". You lose!";
+                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorRed 1s ease-out backwards"
+                // document.querySelector('#'+ userChoice).style.animation = ""
+                // document.querySelector('#' + userChoice).style.animation = "none"
                 scoreCom++
                 score.innerHTML = scoreMe + " : " + scoreCom;
                 break;
@@ -44,14 +47,17 @@ const gamePlay = (userChoice) => {
     
         if (roundsPlayed == radioBtnValue && scoreMe > scoreCom) {
             resultText.innerHTML = "You're a winner!"
-            }   else if (roundsPlayed == radioBtnValue && scoreMe < scoreCom) {
+        }   
+        else if (roundsPlayed == radioBtnValue && scoreMe < scoreCom) {
             resultText.innerHTML = "You're a loser!"
-            }   else if (roundsPlayed == radioBtnValue && scoreMe == scoreCom) {
+        }   
+        else if (roundsPlayed == radioBtnValue && scoreMe == scoreCom) {
             resultText.innerHTML = "It's a tie. Nobody wins. Go home...Or play again"
-            }
+        }
     } 
     
     form.style.display = 'none';
+    roundsDisplay.style.display = 'flex'
     roundScore.innerHTML = roundsPlayed + " / " +  radioBtnValue;
 }
 

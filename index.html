@@ -14,14 +14,18 @@
             <form action="" id="form">
                 <h2>how many rounds</h2>
                 <div id="rounds">
-                    <label for="">5</label>
-                    <input type="radio" name="rounds" id="five" value="5">
-                    <label for="">10</label>
-                    <input type="radio" name="rounds" id="ten" value="10"><br>
-                    <label for="">15</label>
-                    <input type="radio" name="rounds" id="fiveteen" value="15">
-                    <label for="">20</label>
-                    <input type="radio" name="rounds" id="twenty" value="20">
+                    <!-- <div class="firstLine"> -->
+                        <label for="">5</label>
+                        <input type="radio" name="rounds" id="five" value="5"><br>
+                        <label for="">10</label>
+                        <input type="radio" name="rounds" id="ten" value="10"><br>
+                    <!-- </div> -->
+                    <!-- <div class="secondLine"> -->
+                        <label for="">15</label>
+                        <input type="radio" name="rounds" id="fiveteen" value="15"><br>
+                        <label for="">20</label>
+                        <input type="radio" name="rounds" id="twenty" value="20"><br>
+                    <!-- </div> -->
                 </div>
             </form>
             <p id="roundScore"></p>
@@ -40,9 +44,9 @@
         </div>
 
         <div class="icon-buttons">
-            <input type="button" value="Rock" id="rock" onclick="playRock()">
-            <input type="button" value="Paper" id="paper" onclick="playPaper()">
-            <input type="button" value="Scissors" id="scissors" onclick="playScissors()">
+            <a onclick="playRock()"><img src="./assets/img/hand-back-fist-regular.svg" alt="hand-icon-rock" id="Rock"></a>
+            <a onclick="playPaper()"><img src="./assets/img/hand-regular.svg" alt="hand-icon-paper" id="Paper"></a>
+            <a onclick="playScissors()"><img src="./assets/img/hand-scissors-regular.svg" alt="hand-icon-scissors" id="Scissors"></a>
             <p>MAKE YOUR MOVE</p>
         </div>
         <a href="">restart</a>
@@ -50,3 +54,4 @@
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
+

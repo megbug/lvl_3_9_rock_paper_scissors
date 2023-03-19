@@ -13,7 +13,7 @@
 html {
     background-color: #24272F;
     font-family: 'didact-reg';
-    font-size: 30px;
+    font-size: 24px;
 }
 
 h1 {
@@ -32,18 +32,19 @@ section {
 
 section form {
     border: 3px solid dimgrey;
-    /* display: grid;
-    grid-template-areas: repeat(2, 1fr); */
+    height: 150px;
 }
 
-/* section form h2 {
-    text-align: center;
+section form h2 {
+    padding: 2vh 0;
 }
 
-section form div label {
-    display: inline-block;
-    padding: 10px 40px 0 20px;
-} */
+section #rounds {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
 
 section .score {
     border: 3px solid dimgrey;
@@ -74,11 +75,44 @@ section .score #comp {
 
 section .icon-buttons p{
     font-size: 18px;
-    padding-top: 3vh;
+    padding: 3vh 0;
 }
 
 section a {
     font-size: 18px;
     text-decoration: none;
-    color: white;
+    color: dimgrey;
+}
+
+#roundScore {
+    border: 3px solid dimgrey;
+    width: 300px;
+    height: 150px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultTextform {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-buttons img{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin: 0 10px;
+    border: 3px solid dimgrey;
+    border-radius: 40px;
+    animation-name: pulsatingColorRed;
+}
+
+@keyframes pulsatingColorRed{
+    /* from {background-color: none;} */
+    /* to {background-color: firebrick;} */
+    0% {background-color: none;}
+    100% {background-color: firebrick;}
 }
