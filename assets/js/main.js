@@ -25,11 +25,13 @@ const gamePlay = (userChoice) => {
             case "PaperPaper":
             case "RockRock":
                 resultText.innerHTML = "Both of you choose " + computerChoice + ". So it's a tie!";
+                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorGrey 1s ease-out"
                 break;
             case "RockScissors":
             case "ScissorsPaper":
             case "PaperRock":
                 resultText.innerHTML = " You choose " + userChoice + " and that beats " + computerChoice + ". You win!";
+                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorGreen 1s ease-out"
                 scoreMe++;
                 score.innerHTML = scoreMe + " : " + scoreCom;
                 break;
@@ -37,9 +39,7 @@ const gamePlay = (userChoice) => {
             case "PaperScissors":
             case "RockPaper":
                 resultText.innerHTML = " The computer choose " + computerChoice + " and that beats " + userChoice + ". You lose!";
-                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorRed 1s ease-out backwards"
-                // document.querySelector('#'+ userChoice).style.animation = ""
-                // document.querySelector('#' + userChoice).style.animation = "none"
+                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorRed 1s ease-out"
                 scoreCom++
                 score.innerHTML = scoreMe + " : " + scoreCom;
                 break;
@@ -64,9 +64,11 @@ const gamePlay = (userChoice) => {
 const playRock = () => {
     gamePlay("Rock");
 }
+
 const playPaper = () => {
     gamePlay("Paper");
 }
+
 const playScissors = () => {
     gamePlay("Scissors");
 }
@@ -91,5 +93,3 @@ Ausgabe Result in Textform am Ende
 
 restart
 */
-
-

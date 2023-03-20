@@ -108,11 +108,24 @@ section a {
     border: 3px solid dimgrey;
     border-radius: 40px;
     animation-name: pulsatingColorRed;
+    animation-name: pulsatingColorGreen;
+    animation-name: pulsatingColorGrey;
 }
 
 @keyframes pulsatingColorRed{
-    /* from {background-color: none;} */
-    /* to {background-color: firebrick;} */
     0% {background-color: none;}
-    100% {background-color: firebrick;}
+    50% {background-color: firebrick;}
+    100% {background-color: none;}
+}
+
+@keyframes pulsatingColorGreen{
+    0% {background-color: none;}
+    50% {background-color: green;}
+    100% {background-color: none;}
+}
+
+@keyframes pulsatingColorGrey{
+    0% {background-color: none;}
+    50% {background-color: grey;}
+    100% {background-color: none;}
 }
