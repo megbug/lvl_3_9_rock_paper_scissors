@@ -25,7 +25,7 @@ const gamePlay = (userChoice) => {
             case "PaperPaper":
             case "RockRock":
                 resultText.innerHTML = "Both of you choose " + computerChoice + ". So it's a tie!";
-                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorGrey 1s ease-out"
+                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorYellow 1s ease-out"
                 break;
             case "RockScissors":
             case "ScissorsPaper":

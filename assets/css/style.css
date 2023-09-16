@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: whitesmoke;
 }
 
 @font-face {
@@ -11,7 +12,8 @@
 }
 
 html {
-    background-color: #24272F;
+    background-color: rgb(22 78 99);
+    
     font-family: 'didact-reg';
     font-size: 24px;
 }
@@ -44,6 +46,7 @@ section #rounds {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    align-items: center;
 }
 
 section .score {
@@ -81,7 +84,7 @@ section .icon-buttons p{
 section a {
     font-size: 18px;
     text-decoration: none;
-    color: dimgrey;
+    color: whitesmoke;
 }
 
 #roundScore {
@@ -124,8 +127,8 @@ section a {
     100% {background-color: none;}
 }
 
-@keyframes pulsatingColorGrey{
+@keyframes pulsatingColorYellow{
     0% {background-color: none;}
-    50% {background-color: grey;}
+    50% {background-color: yellow;}
     100% {background-color: none;}
 }
