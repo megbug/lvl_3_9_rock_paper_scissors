@@ -12,14 +12,14 @@
 }
 
 html {
-    background-color: rgb(22 78 99);
+    background-color: rgb(134, 154, 161);
     
     font-family: 'didact-reg';
     font-size: 24px;
 }
 
 h1 {
-    background-color: dimgrey;
+    background-color: firebrick;
     text-align: center;
     padding: 3vh 0;
 }
@@ -112,7 +112,8 @@ section a {
     border-radius: 40px;
     animation-name: pulsatingColorRed;
     animation-name: pulsatingColorGreen;
-    animation-name: pulsatingColorGrey;
+    animation-name: pulsatingColorYellow;
+    animation-name: noAnimation;
 }
 
 @keyframes pulsatingColorRed{
@@ -130,5 +131,11 @@ section a {
 @keyframes pulsatingColorYellow{
     0% {background-color: none;}
     50% {background-color: yellow;}
+    100% {background-color: none;}
+}
+
+@keyframes noAnimation {
+    0% {background-color: none;}
+    50% {background-color: plum;}
     100% {background-color: none;}
 }
