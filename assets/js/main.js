@@ -17,6 +17,7 @@ const gamePlay = (userChoice) => {
     const choices = ["Rock", "Paper", "Scissors"];
     const computerChoice = choices[Math.floor(Math.random()*3)]; 
 
+
     if (roundsPlayed < radioBtnValue) {
         roundsPlayed++        
 
@@ -24,14 +25,15 @@ const gamePlay = (userChoice) => {
             case "ScissorsScissors":
             case "PaperPaper":
             case "RockRock":
+                lightOn = true
                 resultText.innerHTML = "Both of you choose " + computerChoice + ". So it's a tie!";
-                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorYellow 1s ease-out"
+                // document.querySelector('#'+ userChoice).style.animation = "pulsatingColorYellow 1s ease-out"
                 break;
             case "RockScissors":
             case "ScissorsPaper":
             case "PaperRock":
                 resultText.innerHTML = " You choose " + userChoice + " and that beats " + computerChoice + ". You win!";
-                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorGreen 1s ease-out"
+                // document.querySelector('#'+ userChoice).style.animation = "pulsatingColorGreen 1s ease-out"
                 scoreMe++;
                 score.innerHTML = scoreMe + " : " + scoreCom;
                 break;
@@ -39,7 +41,7 @@ const gamePlay = (userChoice) => {
             case "PaperScissors":
             case "RockPaper":
                 resultText.innerHTML = " The computer choose " + computerChoice + " and that beats " + userChoice + ". You lose!";
-                document.querySelector('#'+ userChoice).style.animation = "pulsatingColorRed 1s ease-out"
+                // document.querySelector('#'+ userChoice).style.animation = "pulsatingColorRed 1s ease-out"
                 scoreCom++
                 score.innerHTML = scoreMe + " : " + scoreCom;
                 break;
